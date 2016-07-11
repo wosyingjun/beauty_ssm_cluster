@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link  href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+<link  href="/css/bootstrap-table.min.css" rel="stylesheet">
+<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<script src="/script/bootstrap-table.min.js"></script>
+<script src="/script/bootstrap-table-zh-CN.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.js"></script>
+<title>商品列表</title>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading text-center">
+				<h2>商品列表</h2>
+			</div>
+			<table id="goods_table" class="table table-hover"></table>
+		</div>
+	</div>
+
+	<div id="loginModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title text-center">
+						<span class="glyphicon glyphicon-phone"> </span>用户电话
+					</h3>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<input type="text" name="userPhone" id="userPhone" placeholder="填写手机号" class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<span id="userPhoneMessage" class="glyphicon"> </span>
+					<button type="button" id="loginBtn" class="btn btn-success">
+						<span class="glyphicon glyphicon-phone"></span>提交
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="/script/handler.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+	//初始化业务逻辑script
+    handler.goods.init({});
+})
+</script>
+</html>
