@@ -1,28 +1,24 @@
 package com.yingjun.ssm.web;
 
-import java.util.List;
-
-import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
-
+import com.yingjun.ssm.dto.BaseResult;
+import com.yingjun.ssm.dto.BootStrapTableResult;
+import com.yingjun.ssm.entity.Goods;
+import com.yingjun.ssm.enums.ResultEnum;
+import com.yingjun.ssm.exception.MyException;
+import com.yingjun.ssm.service.GoodsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.yingjun.ssm.dto.BaseResult;
-import com.yingjun.ssm.dto.BootStrapTableResult;
-import com.yingjun.ssm.entity.Goods;
-import com.yingjun.ssm.entity.User;
-import com.yingjun.ssm.enums.ResultEnum;
-import com.yingjun.ssm.exception.MyException;
-import com.yingjun.ssm.service.GoodsService;
+import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/goods")
@@ -83,6 +79,6 @@ public class GoodsController {
 		}catch (Exception e) {
 			return new BaseResult<Object>(false, ResultEnum.INNER_ERROR.getMsg());
 		}
-		return new BaseResult<Object>(true, "success");
+		return new BaseResult<Object>(true, null);
 	}
 }
