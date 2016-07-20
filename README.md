@@ -1,4 +1,4 @@
-#二优雅的SSM架构再优化（前后分离+负载均衡）  
+#对”优雅的SSM框架“进行完善(nginx负载均衡+tomcat集群)
 - Maven
 - Spring（IOC DI 声明式事务处理）
 - SpringMVC（支持Restful风格）
