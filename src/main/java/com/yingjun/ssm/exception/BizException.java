@@ -4,15 +4,15 @@ package com.yingjun.ssm.exception;
  * @author yingjun
  *
  */
-public class MyException extends RuntimeException {
+public class BizException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	public MyException(String message) {
+	public BizException(String message) {
         super(message);
     }
 
-    public MyException(String message, Throwable cause) {
+    public BizException(String message, Throwable cause) {
         super(message, cause);
     }
     

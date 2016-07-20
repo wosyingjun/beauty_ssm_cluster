@@ -4,7 +4,7 @@ import com.yingjun.ssm.dto.BaseResult;
 import com.yingjun.ssm.dto.BootStrapTableResult;
 import com.yingjun.ssm.entity.Goods;
 import com.yingjun.ssm.enums.ResultEnum;
-import com.yingjun.ssm.exception.MyException;
+import com.yingjun.ssm.exception.BizException;
 import com.yingjun.ssm.service.GoodsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -74,7 +74,7 @@ public class GoodsController {
 		httpSession.setAttribute("sessionTime", System.currentTimeMillis());
 		try {
 			goodsService.buyGoods(userPhone, goods.getGoodsId(), false);
-		}catch (MyException e1) {
+		}catch (BizException e1) {
 			return new BaseResult<Object>(false, e1.getMessage());
 		}catch (Exception e) {
 			return new BaseResult<Object>(false, ResultEnum.INNER_ERROR.getMsg());
