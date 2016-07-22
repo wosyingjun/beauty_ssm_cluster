@@ -15,4 +15,4 @@
 - **nginx高可用方案（待完善）**  
 
 ###**架构图：**
-![](http://i.imgur.com/EXGSQ0m.png)
+![](http://i.imgur.com/Xtpg3od.png)
