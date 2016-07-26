@@ -1,13 +1,12 @@
 package com.yingjun.ssm.entity;
 
-import java.util.Date;
-
-import javax.validation.constraints.Min;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.yingjun.ssm.util.CustomDateSerializer;
 import com.yingjun.ssm.validator.Not999;
+
+import javax.validation.constraints.Min;
+import java.util.Date;
 
 public class Goods {
 

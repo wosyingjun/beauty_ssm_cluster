@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
-import org.springframework.cache.annotation.Cacheable;
 
 import com.yingjun.ssm.entity.Goods;
 

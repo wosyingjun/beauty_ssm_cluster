@@ -2,8 +2,6 @@ package com.yingjun.ssm.entity;
 
 import java.util.Date;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.yingjun.ssm.util.CustomDateSerializer;
 

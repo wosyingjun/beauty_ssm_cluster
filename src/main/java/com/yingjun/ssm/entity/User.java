@@ -2,11 +2,6 @@ package com.yingjun.ssm.entity;
 
 import java.util.Date;
 
-import javax.validation.constraints.NotNull;
-
-import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.web.bind.annotation.CookieValue;
-
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.yingjun.ssm.util.CustomDateSerializer;
 
