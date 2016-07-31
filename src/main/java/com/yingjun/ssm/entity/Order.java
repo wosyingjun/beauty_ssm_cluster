@@ -1,9 +1,9 @@
 package com.yingjun.ssm.entity;
 
-import java.util.Date;
-
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.yingjun.ssm.util.CustomDateSerializer;
+
+import java.util.Date;
 
 /**
  * 订单

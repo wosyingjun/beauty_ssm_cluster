@@ -61,14 +61,15 @@ public class GoodsController {
 	public BaseResult<Object> buy(@CookieValue(value = "userPhone", required = false) Long userPhone,
 			@Valid Goods goods, BindingResult result,HttpSession httpSession){
 		LOG.info("invoke----------/"+goods.getGoodsId()+"/buy userPhone:"+userPhone);
-		/*if (userPhone == null) {
-			return new BaseResult<Object>(false, ResultEnum.PARAM_USER.getMsg());
-		}*/
-		//Valid 参数验证
-		if(result.hasErrors()){
-			String errorInfo="["+result.getFieldError().getField()+"]"+result.getFieldError().getDefaultMessage();
-			return new BaseResult<Object>(false, errorInfo);
+		if (userPhone == null) {
+			return new BaseResult<Object>(false, ResultEnum.INVALID_USER.getMsg());
 		}
+		//Valid 参数验证(这里注释掉，采用AOP的方式验证,见BindingResultAop.java)
+		//if (result.hasErrors()) {
+		//    String errorInfo = "[" + result.getFieldError().getField() + "]" + result.getFieldError().getDefaultMessage();
+		//    return new BaseResult<Object>(false, errorInfo);
+		//}
+
 		//这里纯粹是为了验证集群模式西的session共享功能上
 		LOG.info("lastSessionTime:"+httpSession.getAttribute("sessionTime"));
 		httpSession.setAttribute("sessionTime", System.currentTimeMillis());
