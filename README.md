@@ -1,6 +1,6 @@
 #对"优雅的SSM框架"进行完善(页面分离+Nginx负载均衡+Tomcat集群)
 - Maven
-- Spring（IOC DI AOP 声明式事务处理）
+- Spring（IOC DI AOP 声明式事务处理） 
 - SpringMVC（支持Restful风格）
 - Hibernate Validate（参数校验）
 - Mybatis（最少配置方案）
