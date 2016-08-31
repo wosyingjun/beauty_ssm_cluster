@@ -14,7 +14,7 @@
 - Nginx静态加载、负载均衡
 - [基于keepalived的nginx高可用方案](http://wosyingjun.iteye.com/blog/2313147) 
 - Tomcat集群（Redis共享Session）
-- **Sping Shiro权限控制（待完善）**
+- Sping Shiro权限控制（待完善）
 
 ###架构图：
-![](http://i.imgur.com/Xtpg3od.png)
+![](http://i.imgur.com/xf0UsI7.png)
